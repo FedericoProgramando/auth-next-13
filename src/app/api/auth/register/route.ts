@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { connectMongoDB } from "@/app/libs/mongodb";
 import { isValidEmail } from "@/utils/isValidEmail";
-import User, { IUserSchema } from "@/models/User";
+import User, { IUser, IUserSchema } from "@/models/User";
 import { message } from "@/utils/messages";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
@@ -9,7 +9,7 @@ import bcrypt from "bcryptjs";
 export async function POST(req: NextRequest) {
   try {
     await connectMongoDB();
-    const body = await req.json();
+    const body= await req.json();
     const { email, password, confirmPassword } = body;
 
     // Valida que esten todos los campos
