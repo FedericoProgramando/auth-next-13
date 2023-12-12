@@ -6,11 +6,15 @@ export const message = {
         emailExist: "Ya existe ese usuario con ese correo",
         default: "Ocurrio un error",
         userNotFound: "Usuario no encontrado",
-        incorrectPassword: "Contraseña incorrecta",    
+        incorrectPassword: "Contraseña incorrecta",  
+        notAuthorized: "No autorizado", 
+        tokenNoValid: "Token no valido" 
     },
     success: {
         userCreated: "Useuario creado correctamente",
         userLogged: "Que bueno verte devuelta",
         emailSend: "Email enviado correctamente",
+        passwordChanged: "Contraseña cambiada correctamente",
+        authorized: "Autorizado",
     }
 }
