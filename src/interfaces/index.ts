@@ -1,0 +1,1 @@
+export type StatuNotification = "error" | "success" | null;
